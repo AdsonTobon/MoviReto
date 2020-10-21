@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Rubik&display=swap");
+:root {
+  --main-bg-color: #eafaff;
+  --title-color:#54f692;
+  --p-color: #043b1f;
+  --home-bg-color: #4CAF50;
+}
+body {
+  background: var(--main-bg-color) !important ;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 20px !important;
+  color: var(--p-color) !important;
+}
+h1,
+h2,
+h3 {
+  font-family: "Bangers", cursive;
+  color: var(--title-color);
+}
+p {
+  margin-bottom: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 51px;
+}
+/* .container-fluid {
+  overflow-x: hidden;
+} */
+
+.home1{
+  height: 100vh;
+  background: var(--home-bg-color) ;
+}
+.home1 h1 {
+  color: #fff;
+}
+.comofunciona h2 {
+  color: #ffffff;
+}
+.recompensas h2 {
+  color: #4daf51;
+}
+.img-home {
+  z-index: 1;
+}
+
+.comofunciona {
+  background: #f9cc45;
+  background-image: radial-gradient(#e6c254 13%, transparent 13%), radial-gradient(#fbda7a 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  min-height: 100vh;
+  clip-path: polygon(100% 5%,100% 100%, 0 100%, 0% 0%);
+  padding-top: 1pc;
+  margin-top: -80px;
+  padding: 30px;
+  padding-bottom: 150px;
+}
+.recompensas{
+    background: #dcdcb1;
+    background-image: radial-gradient(#d0ced4 13%, transparent 13%), radial-gradient(#d2c8cb 13%, transparent 13%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    min-height: 100vh;
+    clip-path: polygon(100% 0%,100% 100%, 0 100%, 0% 5%);
+    margin-top: -100px;
+    padding-top: 50px;
+}
+.space-header {
+  padding-top:90px;
+}
+#map {
+  padding-top:90px;
+}
+.retosuser img {
+  width: 50px;
+}
+.retosuser {
+  display: grid;
+  grid-template-columns: 0.2fr 0.4fr 2.4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px 20px;
+  align-items: center;
+
+}
+.retosuser svg {
+  margin: auto;
+}
+.proximosuser {
+  display: grid;
+  grid-template-columns: 0.2fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px 20px;
+  align-items: center;
+} 
+.proximosuser svg {
+  margin: auto;
+}
+.proximosuser img {
+  width: 50px;
+}
+h2.title {
+  background: #e2d1d1;
+  padding: 10px;
+  color: #569c67;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.success {
+  color: #4caf50;
+}
+.fail {
+  color: #e4005f;
+}
+.retosarriba {
+  display: grid;
+}
+.user-card {
+  font-size: 13px;
+  text-align: justify;
+  color: white;
+}
+.container-cards{
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+.grid-dashboard {
+  display: grid;
+  padding: 15px;
+  margin: 15px;
+  grid-gap: 19px;
+
+}
+@media (min-width: 1000px){
+.grid-dashboard {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 0.2fr 0.5fr;
+  gap: 0px 10px;
+  grid-template-areas:
+    "perfil retos"
+    "perfil solicitudes";
+  padding: 0 10px;
+}
+.perfil { grid-area: perfil; }
+.retos { grid-area: retos; }
+.solicitudes { grid-area: solicitudes; }
+.retosarriba {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-cards{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.comofunciona {
+  background: #f9cc45;
+  background-image: radial-gradient(#e6c254 13%, transparent 13%), radial-gradient(#fbda7a 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  min-height: 100vh;
+  clip-path: polygon(100% 24%,100% 100%, 0 100%, 0% 0%);
+  padding-top: 10pc;
+  margin-top: -206px;
+  padding-bottom: 150px;
+}
+.recompensas{
+  background: #dcdcb1;
+  background-image: radial-gradient(#d0ced4 13%, transparent 13%), radial-gradient(#d2c8cb 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  min-height: 100vh;
+  clip-path: polygon(100% 0%,100% 100%, 0 100%, 0% 15%);
+  margin-top: -100px;
+}
+}
